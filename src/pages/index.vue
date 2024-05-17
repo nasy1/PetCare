@@ -216,6 +216,8 @@
             <v-col cols="auto">
               <v-card outlined class="d-inline-block mr-4" style="width: 300px; height: 122px;">
                 <!-- content for first card here -->
+                <v-img src="@/assets/Whiskas_Dry_Adult.png" aspect-ratio="1" contain
+                  style="width: 100%; height: 79px;"></v-img>
               </v-card>
               <v-card outlined class="d-inline-block mr-4" style="width: 300px; height: 122px;">
                 <!-- content for second card here -->
