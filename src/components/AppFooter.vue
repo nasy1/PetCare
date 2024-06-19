@@ -9,8 +9,7 @@
           </div>
           <div style="color: white;">
             Pusat Kebutuhan Untuk
-            Hewan Peliharaan Anda.Terbesar, Terlengkap ,
-            dan Terpercaya Di Indonesia.
+            Hewan Peliharaan Anda.Terbesar, Terlengkap dan Terpercaya Di Indonesia.
           </div>
         </v-col>
         <v-col class="d-flex justify-center">
@@ -27,8 +26,8 @@
           <div style="color: white;">
             <p class="font-weight-bold mb-5">Layanan</p>
             Jalan sekian nomer sekian<br>
-            <span class="font-weight-bold">Kontak:</span> 081232132198<br>
-            <span class="font-weight-bold">Email:</span> awikwok@gmail.com
+            <span class="font-weight-bold">Kontak:</span> 08123456789<br>
+            <span class="font-weight-bold">Email:</span> petcare@gmail.com
           </div>
         </v-col>
         <v-col>

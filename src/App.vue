@@ -11,6 +11,7 @@
 
 <script>
   // ...
+  import router from './router';
   export default {
   computed: {
     isPetshopPage() {

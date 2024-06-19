@@ -15,7 +15,7 @@
                                 lagi.
                             </p>
                             <div class="d-flex">
-                                <v-btn class="me-3" color="#9BB1D6" width="250" height="60" rounded="pill" text
+                                <v-btn class="me-3" color="#9BB1D6" width="250" height="60" rounded="pill" 
                                     style="color: white; text-transform: none; font-family: 'Mochiy Pop One', sans-serif;">
                                     <template v-slot:prepend>
                                         <span class="mr-3">Layanan Kami</span>
@@ -24,16 +24,20 @@
                                         <v-icon>mdi-arrow-top-right</v-icon>
                                     </template>
                                 </v-btn>
+
                                 <v-btn variant="outlined" class="me-3" color="#8FD0C6" width="250" height="60"
                                     rounded="pill" text
-                                    style="text-transform: none; font-family: 'Mochiy Pop One', sans-serif; ">
+                                    href="https://wa.me/6285603535805?text=Halo, saya ingin bertanya tentang layanan Anda."
+                                    target="_blank"
+                                    style="text-transform: none; font-family: 'Mochiy Pop One', sans-serif;">
                                     <template v-slot:prepend>
-                                        <span class="mr-3">Hubungi kami</span>
+                                        <span class="mr-3">Hubungi Kami</span>
                                     </template>
                                     <template v-slot:append>
                                         <v-icon>mdi-phone</v-icon>
                                     </template>
                                 </v-btn>
+
                             </div>
                         </div>
                     </v-col>
@@ -50,7 +54,8 @@
                     </h2>
                     <v-row class="center-cards">
                         <!-- First Card -->
-                        <v-col cols="12" md="6" class="d-flex justify-center fixed-width ">
+                        <v-col cols="12" md="6" class="d-flex justify-center fixed-width"
+                            style="margin-bottom: 16px;">
                             <div class="card-wrapper">
                                 <v-card color="#9BB1D6" variant="outlined" class="mb-3">
                                     <v-container class="d-flex align-center">
@@ -65,11 +70,12 @@
                                     </v-container>
                                     <v-card-text
                                         style="font-family: 'Poppins', sans-serif; font-size: 14px; margin: 5px;">
-                                        Dokter hewan memastikan hewan tetap sehat melalui perawatan medis berkualitas dan saran kesehatan yang tepat.
+                                        Dokter hewan memastikan hewan tetap sehat melalui perawatan medis berkualitas
+                                        dan saran kesehatan yang tepat.
                                     </v-card-text>
                                     <v-card-actions>
-                                        <v-btn append-icon="mdi-arrow-right" color="black">
-                                            Action
+                                        <v-btn append-icon="mdi-arrow-right" color="black" :to="{ path: '/dokter' }">
+                                            Dapatkan Layanan
                                         </v-btn>
                                     </v-card-actions>
                                     <v-img src="@/assets/card_icon.png"
@@ -78,7 +84,8 @@
                             </div>
                         </v-col>
                         <!-- Second Card -->
-                        <v-col cols="12" md="6" class="d-flex justify-center fixed-width">
+                        <v-col cols="12" md="6" class="d-flex justify-center fixed-width"
+                            style="margin-bottom: 16px;">
                             <div class="card-wrapper">
                                 <v-card color="#9BB1D6" variant="outlined" class="mb-3">
                                     <v-container class="d-flex align-center">
@@ -93,11 +100,12 @@
                                     </v-container>
                                     <v-card-text
                                         style="font-family: 'Poppins', sans-serif; font-size: 14px; margin: 5px;">
-                                        Grooming membantu mencegah masalah kesehatan dan memastikan hewan terlihat rapi dan sehat.
+                                        Grooming membantu mencegah masalah kesehatan dan memastikan hewan terlihat rapi
+                                        dan sehat.
                                     </v-card-text>
                                     <v-card-actions>
-                                        <v-btn append-icon="mdi-arrow-right" color="black">
-                                            Action
+                                        <v-btn append-icon="mdi-arrow-right" color="black" :to="{ path: '/grooming' }">
+                                            Dapatkan Layanan
                                         </v-btn>
                                     </v-card-actions>
                                     <v-img src="@/assets/card_icon.png"
@@ -108,7 +116,8 @@
                     </v-row>
                     <v-row class="center-cards">
                         <!-- Third Card -->
-                        <v-col cols="12" md="6" class="d-flex justify-center fixed-width">
+                        <v-col cols="12" md="6" class="d-flex justify-center fixed-width"
+                            style="margin-bottom: 16px;">
                             <div class="card-wrapper">
                                 <v-card color="#9BB1D6" variant="outlined" class="mb-3">
                                     <v-container class="d-flex align-center">
@@ -123,11 +132,12 @@
                                     </v-container>
                                     <v-card-text
                                         style="font-family: 'Poppins', sans-serif; font-size: 14px; margin: 5px;">
-                                        Petshop juga menyediakan produk kesehatan seperti vitamin dan obat-obatan untuk mendukung kesejahteraan hewan peliharaan.
+                                        Petshop juga menyediakan produk kesehatan seperti vitamin dan obat-obatan untuk
+                                        mendukung kesejahteraan hewan peliharaan.
                                     </v-card-text>
                                     <v-card-actions>
-                                        <v-btn append-icon="mdi-arrow-right" color="black">
-                                            Action
+                                        <v-btn append-icon="mdi-arrow-right" color="black" :to="{ path: '/petshop' }">
+                                            Dapatkan Layanan
                                         </v-btn>
                                     </v-card-actions>
                                     <v-img src="@/assets/card_icon.png"
@@ -151,12 +161,13 @@
                                     </v-container>
                                     <v-card-text
                                         style="font-family: 'Poppins', sans-serif; font-size: 14px; margin: 5px;">
-                                        Pet hotel menyediakan ruang bermain, makanan bergizi, dan pemantauan kesehatan, 
-                                        serta layanan tambahan seperti grooming dan spa untuk memastikan hewan peliharaan merasa nyaman selama menginap.
+                                        Pet hotel menyediakan ruang bermain, makanan bergizi, dan pemantauan untuk
+                                        memastikan hewan peliharaan merasa nyaman selama menginap.
                                     </v-card-text>
                                     <v-card-actions>
-                                        <v-btn append-icon="mdi-arrow-right" color="black">
-                                            Action
+                                        <v-btn append-icon="mdi-arrow-right" color="black"
+                                            :to="{ path: '/pethotel' }">
+                                            Dapatkan Layanan
                                         </v-btn>
                                     </v-card-actions>
                                     <v-img src="@/assets/card_icon.png"
@@ -167,7 +178,7 @@
                     </v-row>
                 </v-container>
             </div>
-            
+
             <div style="padding: 80px 0;">
                 <v-container class="fill-height d-flex align-center justify-center">
                     <v-row>
@@ -190,8 +201,10 @@
                                     </h2>
                                     <p class="mb-8"
                                         style="font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 500; text-align: left;">
-                                        Menjadi penyedia layanan petcare terdepan yang memberikan perawatan holistik, inovatif, 
-                                        dan penuh kasih sayang kepada hewan peliharaan, serta meningkatkan kualitas hidup hewan peliharaan dan kepuasan pemiliknya.
+                                        Menjadi penyedia layanan petcare terdepan yang memberikan perawatan holistik,
+                                        inovatif,
+                                        dan penuh kasih sayang kepada hewan peliharaan, serta meningkatkan kualitas
+                                        hidup hewan peliharaan dan kepuasan pemiliknya.
                                     </p>
                                     <h2 class="mb-5"
                                         style="color: #9BB1D6; font-family: 'Mochiy Pop One', sans-serif; font-size: 31px; text-align: left;">
@@ -235,7 +248,7 @@
                                         <br>
                                         <span style="color: #FFBF00;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                                         <br>
-                                        <a href="/halaman-tujuan"
+                                        <a href="/petshop"
                                             style="text-decoration: none; color: black; transition: color 0.3s; font-family: 'Poppins', sans-serif;"
                                             onmouseover="this.style.color='blue'"
                                             onmouseout="this.style.color='black'">Cek Sekarang<v-icon
@@ -253,7 +266,7 @@
                                         <br>
                                         <span style="color: #FFBF00;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                                         <br>
-                                        <a href="/halaman-tujuan"
+                                        <a href="/petshop"
                                             style="text-decoration: none; color: black; transition: color 0.3s; font-family: 'Poppins', sans-serif;"
                                             onmouseover="this.style.color='blue'"
                                             onmouseout="this.style.color='black'">Cek Sekarang<v-icon
@@ -271,7 +284,7 @@
                                         <br>
                                         <span style="color: #FFBF00;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                                         <br>
-                                        <a href="/halaman-tujuan"
+                                        <a href="/petshop"
                                             style="text-decoration: none; color: black; transition: color 0.3s; font-family: 'Poppins', sans-serif;"
                                             onmouseover="this.style.color='blue'"
                                             onmouseout="this.style.color='black'">Cek Sekarang<v-icon
@@ -293,7 +306,7 @@
                                         <br>
                                         <span style="color: #FFBF00;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                                         <br>
-                                        <a href="/halaman-tujuan"
+                                        <a href="/petshop"
                                             style="text-decoration: none; color: black; transition: color 0.3s; font-family: 'Poppins', sans-serif;"
                                             onmouseover="this.style.color='blue'"
                                             onmouseout="this.style.color='black'">Cek Sekarang<v-icon
@@ -311,7 +324,7 @@
                                         <br>
                                         <span style="color: #FFBF00;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                                         <br>
-                                        <a href="/halaman-tujuan"
+                                        <a href="/petshop"
                                             style="text-decoration: none; color: black; transition: color 0.3s; font-family: 'Poppins', sans-serif;"
                                             onmouseover="this.style.color='blue'"
                                             onmouseout="this.style.color='black'">Cek Sekarang<v-icon
@@ -329,7 +342,7 @@
                                         <br>
                                         <span style="color: #FFBF00;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                                         <br>
-                                        <a href="/halaman-tujuan"
+                                        <a href="/petshop"
                                             style="text-decoration: none; color: black; transition: color 0.3s; font-family: 'Poppins', sans-serif;"
                                             onmouseover="this.style.color='blue'"
                                             onmouseout="this.style.color='black'">Cek Sekarang<v-icon
@@ -344,7 +357,7 @@
 
             <div style="padding: 80px 0; display: flex; justify-content: center;">
                 <v-card color="#9BB1D6" variant="outlined" class="mb-3 text-center"
-                    style="width: 277px; height: 468px; margin-right: 153px;">
+                    style="width: 277px; height: 300px; margin-right: 153px;">
                     <v-container class="d-flex align-center justify-center">
                     </v-container>
                     <v-card-title class="mb-5"
@@ -354,45 +367,16 @@
                     <v-btn class="elevation-0 mb-10"
                         style="width: 145px; height: 43px; background-color: #8FD0C6; color: white; font-weight: bold; font-size: 18px; font-family: 'Poppins', sans-serif; text-transform: none;">Rp.
                         100.000</v-btn>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-btn variant="outlined" color="#8FD0C6" class="elevation-0 mt-4"
-                        style="text-transform: none;">
+                    <v-btn variant="outlined" color="#8FD0C6" class="elevation-0 mt-4" style="text-transform: none;"
+                        :to="{ path: '/grooming' }">
                         Cek Sekarang
                     </v-btn>
                     <v-img src="@/assets/card_icon.png"
                         style="position: absolute; bottom: 0px; right: -10px; z-index: 1; width: 133px; height: 122px;"></v-img>
                 </v-card>
+
                 <v-card color="#9BB1D6" variant="outlined" class="mb-3 text-center"
-                    style="width: 277px; height: 468px; margin-right: 153px;">
+                    style="width: 277px; height: 300px; margin-right: 153px;">
                     <v-container class="d-flex align-center justify-center">
                     </v-container>
                     <v-card-title class="mb-5"
@@ -401,46 +385,17 @@
                     </v-card-title>
                     <v-btn class="elevation-0 mb-10"
                         style="width: 145px; height: 43px; background-color: #8FD0C6; color: white; font-weight: bold; font-size: 18px; font-family: 'Poppins', sans-serif; text-transform: none;">Rp.
-                        100.000</v-btn>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-btn variant="outlined" color="#8FD0C6" class="elevation-0 mt-4"
-                        style="text-transform: none;">
+                        125.000</v-btn>
+                    <v-btn variant="outlined" color="#8FD0C6" class="elevation-0 mt-4" style="text-transform: none;"
+                        :to="{ path: '/grooming' }">
                         Cek Sekarang
                     </v-btn>
                     <v-img src="@/assets/card_icon.png"
                         style="position: absolute; bottom: 0px; right: -10px; z-index: 1; width: 133px; height: 122px;"></v-img>
                 </v-card>
+
                 <v-card color="#9BB1D6" variant="outlined" class="mb-3 text-center"
-                    style="width: 277px; height: 468px;">
+                    style="width: 277px; height: 300px;">
                     <v-container class="d-flex align-center justify-center">
                     </v-container>
                     <v-card-title class="mb-5"
@@ -449,39 +404,9 @@
                     </v-card-title>
                     <v-btn class="elevation-0 mb-10"
                         style="width: 145px; height: 43px; background-color: #8FD0C6; color: white; font-weight: bold; font-size: 18px; font-family: 'Poppins', sans-serif; text-transform: none;">Rp.
-                        100.000</v-btn>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-card-text
-                        style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; padding: 0; opacity: 0.3;">
-                        <v-icon left style="margin-right: 19px;">mdi-check-circle</v-icon>
-                        Lorem ipsum dolor sit
-                    </v-card-text>
-                    <v-btn variant="outlined" color="#8FD0C6" class="elevation-0 mt-4"
-                        style="text-transform: none;">
+                        150.000</v-btn>
+                    <v-btn variant="outlined" color="#8FD0C6" class="elevation-0 mt-4" style="text-transform: none;"
+                        :to="{ path: '/grooming' }">
                         Cek Sekarang
                     </v-btn>
                     <v-img src="@/assets/card_icon.png"
@@ -498,11 +423,14 @@
                             Peliharaan Anda Aman<br>Bersama Kami
                         </v-card-text>
                         <v-btn class="elevation-0"
-                            style="width: 250px; font-family: 'Mochiy Pop One', sans-serif; height: 74px; background-color: white; color: #8FD0C6; border-radius: 37px; text-transform: none;">
+                            style="width: 250px; font-family: 'Mochiy Pop One', sans-serif; height: 74px; background-color: white; color: #8FD0C6; border-radius: 37px; text-transform: none;"
+                            href="https://wa.me/6285603535805?text=Halo, saya ingin bertanya tentang layanan Anda."
+                            target="_blank">
                             Hubungi Kami
                         </v-btn>
+
                     </div>
-                    <!-- other content for card here -->
+                    
                 </v-card>
             </div>
         </v-main>
