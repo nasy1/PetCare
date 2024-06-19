@@ -28,13 +28,13 @@
             <p class="font-weight-bold mb-5">Layanan</p>
             Jalan sekian nomer sekian<br>
             <span class="font-weight-bold">Kontak:</span> 081232132198<br>
-            <span class="font-weight-bold">Email:</span> JdonMySoul@gmail.com
+            <span class="font-weight-bold">Email:</span> awikwok@gmail.com
           </div>
         </v-col>
         <v-col>
           <div style="color: white;">
             <p class="font-weight-bold mb-5">Layanan</p>
-            petshop<br>
+            Petshop<br>
             Grooming<br>
             Dokter Hewan<br>
           </div>
